@@ -21,4 +21,9 @@
 	[self sendSubviewToBack:[self viewWithTag:bgTag]];
 }
 
+- (void)drawRect:(CGRect)rect {
+    UIImage *image = [UIImage imageNamed:@"nav_bg.png"];
+    [image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+}
+
 @end
